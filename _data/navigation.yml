@@ -1,0 +1,9 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Work/Engineering Stuff"
+    url:  /posts
+  - title: "Other"
+    url: /other
+  - title: "Chinese"
+    url: /chinese
