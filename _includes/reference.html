@@ -1,0 +1,5 @@
+{% assign processor = CiteProc::Processor.new style: 'ieee', format: 'html' %}
+{% processor.import BibTeX.parse(File.read("_data/references.bib")) %}
+
+{% assign citation = processor.render :bibliography, id: 'your-citation-id' %}
+{{ citation }}

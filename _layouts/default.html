@@ -3,12 +3,18 @@
   <head>
     <meta charset="utf-8" >
     <title>Ammar Ariffin</title>
-    <link rel="stylesheet" href="{{ 'assets/css/main.css'    }}">
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
   </head>
-  <body class="layout--home wide-sidebar" style="display: flex; flex-direction: column; min-height: 100vh; padding:85px 0 0">
+  <body class="layout--home">
     {% include nav.html %}
-    <div style="flex: 1 0 auto; box-sizing: border-box;">
-        {{ content }}
+    <div>
+      {{ content }}
     </div>
+    <footer id="footer", class="page__footer">
+       <div class=page__footer-copyright>
+        @ Ammar 2023
+       </div>
+    </footer>
   </body>
+
 </html>

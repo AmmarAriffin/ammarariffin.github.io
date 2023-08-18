@@ -2,7 +2,7 @@ main:
   - title: "Home"
     url: /
   - title: "Work/Engineering Stuff"
-    url:  /posts
+    url:  /Engineering
   - title: "Other"
     url: /other
   - title: "Chinese"

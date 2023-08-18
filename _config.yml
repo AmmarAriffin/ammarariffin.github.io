@@ -33,6 +33,10 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll/scholar
+  - citeproc-ruby
+  - csl-styles
+
 
 # include reading these files when running config
 include:
@@ -59,3 +63,11 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - README
+
+defaults:
+  - scope:
+      path: "_posts/Engineering"
+    values:
+      category: "Engineering"
+      layout: default
+      
