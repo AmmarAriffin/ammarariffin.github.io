@@ -1,13 +1,13 @@
 <div>
-    <h2 class="link-hover">
-        <a class="post-link" href="{{ post.url | relative_url }}">
+    <h2 class="visible-links" style="color:#3b9cba">
+        <a href="{{ post.url | relative_url }}">
         {{ post.title }}
         </a>
     </h2>
     <p class="post-date">Posted on {{ post.date | date: "%-d %B %Y" }}</p>
     <p>{{ post.excerpt }}</p>
-    <div class="link-hover">
-        <a class="post-link" style="font-weight:800" href="{{ post.url }}">
+    <div class="visible-links">
+        <a style="font-weight:800" href="{{ post.url }}">
             [Read more]
         </a>
     </div>

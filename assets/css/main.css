@@ -234,24 +234,6 @@
     padding-left: 2em;
 }
 
-.link-hover a:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 4px;
-    background: #3b9cba;
-    width: 100%;
-    transition: all 0.2s ease-in-out;
-    transform:scaleX(0) translate3d(0, 0, 0);
-}
-.link-hover a {
-    position: relative;
-}
-.link-hover a:hover:before {
-    transform:scaleX(1)
-}
-
 h2 {
     font-weight: 400;
     color: #3b9cba;
@@ -263,4 +245,33 @@ h2 {
     font-size: 18px;
     font-style: italic;
     margin: 0 0 10px;
+}
+
+/* Change Linky Behaviour */
+a {
+    text-decoration: none;
+    color: inherit;
+    position:relative;
+    padding-bottom: 5px;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height:4px;
+    background: currentColor;
+    width: 100%;
+    transition:all 0.2s ease-in-out;
+    transform: scaleX(0) translate3d(0, 0, 0);
+}   
+
+a:hover:before {
+    transform: scaleX(1)
 }
