@@ -34,4 +34,16 @@ Often too, some people come and go in this assembling industry to pursue better 
 I do often do a lot of assembling, and I never read the lengthy text in a job instruction. Why bother writing it up then if nobodies gonna read it. More than not, people would actually waste precious labour time 
 
 
+### 2. Descriptive Pictures
 
+This also goes back to the first list of having more pictures, less words. Just pictures alone can confuse the assemblers in many ways such as:
+
+>1. Where should I look in the first place to assemble stuff? 
+2. Which/How one should I assemble first looking at this picture? (Really not beginner friendly)
+3. What screws, washers, electric components, etc to use for this particular picture
+
+Therefore some words are needed in the pictures too. 
+
+## Ways To Fulfill Good JI Characteristics
+
+There are some software program to ease the creation of JI such as revision contorl
