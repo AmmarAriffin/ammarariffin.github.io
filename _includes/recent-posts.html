@@ -1,7 +1,10 @@
 
-<div class="post-border">
-    <h2> Recent Posts</h2>
+<div>
+    <div class="border"></div>
+    <h1><center>Recent Posts</center></h1>
     {% for post in site.posts limit:1 %}
         {% include post-section.html %}
     {% endfor %}
+    <div class="border"></div>
 </div>
+

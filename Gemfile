@@ -40,3 +40,4 @@ gem 'citeproc-ruby'
 gem 'csl-styles'
 gem 'jekyll-scholar', group: :jekyll_plugins
 
+gem 'cgi'

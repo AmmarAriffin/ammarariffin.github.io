@@ -33,7 +33,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
-  - jekyll/scholar
+  - jekyll-scholar
   - citeproc-ruby
   - csl-styles
 
@@ -69,5 +69,11 @@ defaults:
       path: "_posts/Engineering"
     values:
       category: "Engineering"
-      layout: default
+      layout: scholar_post_template
       
+scholar:
+  style: ./assets/ieee.csl
+  locale: en
+  source: ./_bibliography
+  bibliography: Job_Instructions.bib
+  bibliography_template: bib
