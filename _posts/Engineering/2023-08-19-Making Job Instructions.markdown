@@ -44,6 +44,7 @@ This also goes back to the first list of having more pictures, less words. Just 
 
 Therefore some words are needed in the pictures too. 
 
-## Ways To Fulfill Good JI Characteristics
+## My Ways To Fulfill Good JI Characteristics
 
-There are some software program to ease the creation of JI such as revision contorl
+
+
