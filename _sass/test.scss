@@ -11,6 +11,13 @@ $background-color_1: #fff;
 $background-color_2: transparent;
 $background-color_3: #000;
 
+
+footer {
+	background-image: url('../images/background.gif');
+    background-size: cover;
+}
+
+
 /* Change Linky Behaviour */
 .masthead {
 	position: fixed;
@@ -89,7 +96,9 @@ $background-color_3: #000;
 	-ms-flex-align: center;
 	align-items: center;
 	min-height: 2em;
-	background: #000;
+	// background: #000;
+	background-image: url('../images/background.gif');
+    background-size: cover;
 	img {
 		-webkit-transition: none;
 		transition: none;
