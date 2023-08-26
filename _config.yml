@@ -33,7 +33,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
-  - jekyll-scholar
+  - jekyll/scholar
   - citeproc-ruby
   - csl-styles
 
@@ -77,3 +77,8 @@ scholar:
   source: ./_bibliography
   bibliography: Job_Instructions.bib
   bibliography_template: bib
+
+sass:
+  sass_dir: _sass
+  style: compact
+  

@@ -36,8 +36,6 @@ gem "webrick", "~> 1.8"
 
 gem 'jekyll-redirect-from'
 
-gem 'citeproc-ruby'
-gem 'csl-styles'
+gem 'citeproc-ruby', "~> 1.0"
+gem 'csl-styles', "~> 1.0"
 gem 'jekyll-scholar', group: :jekyll_plugins
-
-gem 'cgi'
