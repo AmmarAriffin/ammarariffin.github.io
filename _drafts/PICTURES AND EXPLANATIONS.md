@@ -6,5 +6,7 @@ and
 
 ![Compare_Good](../_assets/images/Compare.png)
 
-Clear that the first thing you look at is the picture because its more enticing more attractive to look at
+Clear that the first thing you look at is the picture because its more enticing more attractive to look
+
+Talk about the fact that you need to do double work for drawings 
 
