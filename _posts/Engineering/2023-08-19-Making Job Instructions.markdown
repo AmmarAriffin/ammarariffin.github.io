@@ -91,9 +91,6 @@ POV of assembling is also an important matter because you dont want people to fl
 clearly if your working on a bench similar to this, would you have had the photo from the front (left) or back (right). It might not be a problem, but this small view perspective could confuse new assemblers looking at this for the first time
 
 
-
-
-
 Sometimes it might be better to just have yellow background, but this might accumulate small cost overtime due to yellow background
 
 ![Clearer Text](..\_assets\images\Yellow_rather_than_red.png)

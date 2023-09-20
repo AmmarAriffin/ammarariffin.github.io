@@ -70,6 +70,12 @@ defaults:
     values:
       category: "Engineering"
       layout: scholar_post_template
+  
+  - scope:
+      path: "_posts/Chinese"
+    values:
+      category: "Chinese"
+      
       
 scholar:
   style: ./assets/ieee.csl
