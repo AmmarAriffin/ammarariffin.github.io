@@ -48,7 +48,6 @@ Therefore some words are needed in the pictures too.
 
 
 
-Another thing is tha t
+Sometimes it might be better to just have yellow background, but this might accumulate small cost overtime due to yellow background
 
-
-
+![Clearer Text](../_assets\images\Yellow_rather_than_red.png)
