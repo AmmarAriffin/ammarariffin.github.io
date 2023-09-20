@@ -231,9 +231,38 @@ a {
 	}
 }
 @media (min-width: 37.5em) {
-	.masthead__menu {
+	.masthead__menu {	
 		.site-nav {
 			float: right;
 		}
 	}
+}
+
+.image-container {
+    display: flex;
+    justify-content:center; /* Adjust as necessary for spacing */
+	align-items: center;
+	flex-wrap :nowrap;
+	.image-box {
+		display:inline-block;
+		width: 30%;
+		margin-right: 10px;
+		border-style: solid;
+		border-color: black;
+	}
+}
+
+
+.image-box {
+	display:flex;
+	justify-content: center;
+
+}
+
+.two-image {
+	max-width: 100%;
+}
+
+.one-image {
+	width:40%;
 }

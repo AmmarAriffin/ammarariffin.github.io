@@ -46,5 +46,51 @@ Therefore some words are needed in the pictures too.
 
 ## My Ways To Fulfill Good JI Characteristics
 
+Looking at this photo below you can clearly see that your eyes tend towards the pictures first. I find that most people do not look at the texts at all and if they get really stuck and confused, they then would try to start reading the text
+
+{% include image.html name="FirstThingYouReadIsPicture.png" alt="A body of text and texts above it" class="one-image"%} 
+
+How I usually make JI are often cramped like this (albeit a bit too cramped too my liking) I try too:
+- Cramped as much info in one picture
+- Include only necessary photos, no need another photo to explain this thing
+  - In this case, the switch button could be in the left photo in the first place. 
+  - But the fact that I always had to use older photos such as the older ones proves that sometimes you would be better off using olderp photos than having to waste time waiting for the better photo. 
+  - Cord grip photo might be important to be place there if there is another similar product shaped as such. 
+- Screw diagram is pretty important here to prevent confusion of which screw to go in first, often new assemblers get this confused
+- Associate the related text close to their corresponding images such as *"Screw Brass Screw"* and *"Cable 2 -> Terminal 1"*. 
+
+
+If you have read till this point, I bet you haven't even read the instruction text (probably just quickly glance through it). I think this exactly shows what an assembler would do when they looked at this snapshot of the instruction, especially when they have to make dozens of these at a time.
+
+
+<div class="image-container">
+    {% include image.html name="Picture2.png" alt="Picture of a good? JI" class="two-image" %}
+    {% include image.html name="Picture3.jpg" alt="Picture of a bad one?" class="two-image" %}
+</div>
+
+
+<br>
+
+This one shows different method of showing the same thing. One with just a picture and another with a picture and a text. 
+
+If you took the time to read the details, you probably read the left picture description before the right text instruction eventhough they are essentially telling the same thing. I think the picture on the left makes people more want to read the text on what it says and this could make them aware of anything that might be important to know when assembling
+
+
+<div class="image-container">
+    {% include image.html name="Compare.png" class="two-image" %}
+    {% include image.html name="Compare2.png" class="two-image" %}
+</div>
+
+POV of assembling is also an important matter because you dont want people to flip the document halfway thinking oh which direction this part should be in for this bigger object. I will give you an example
+
+<div class="image-container">
+    {% include image.html name="GENERAL_POV1.jpg" class="two-image" %}
+    {% include image.html name="GENERAL_POV2.jpg" class="two-image" %}
+</div>
+
+clearly if your working on a bench similar to this, would you have had the photo from the front (left) or back (right). It might not be a problem, but this small view perspective could confuse new assemblers looking at this for the first time
+
+
+
 
 
