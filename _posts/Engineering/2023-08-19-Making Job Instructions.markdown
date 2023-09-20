@@ -50,4 +50,12 @@ Therefore some words are needed in the pictures too.
 
 Sometimes it might be better to just have yellow background, but this might accumulate small cost overtime due to yellow background
 
-![Clearer Text](../_assets\images\Yellow_rather_than_red.png)
+![Clearer Text](..\_assets\images\Yellow_rather_than_red.png)
+
+The instructions should always follow how the assemblers are supposed to be doing, such as prepping and then combine all this blocks of prepped blocks into a final assembly such as shown.
+
+![Prepping](..\_assets\images\Separate_Prep_AND_FINAL.png)
+
+and then reveal to them the final assembly which would make it easier to understand
+
+![Final_Assembly](..\_assets\images\After_Prep_Drawing.png)
