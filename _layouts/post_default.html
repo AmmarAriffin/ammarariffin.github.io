@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  <body class="layout--home">
+    {% include nav.html %}
+    <div class="markdown-content">  
+      {{ content }}
+    </div>
+    <footer id="footer", class="page__footer">
+      {% include social-block.html %}
+       <div class=page__footer-copyright>
+        @ Ammar 2023
+       </div>
+    </footer>
+    <script src="{{ site.baseurl }}/assets/js/ImageCaptionNumbering.js"></script>
+  </body>
+
+</html>
