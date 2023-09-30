@@ -40,7 +40,16 @@ Small mistakes made during assembling such as forgotting to put a certain screw 
   * Provide general steps for a company to reach a certain example (such as quoting to engineering to assembling to packaging)
     * For example, Quoting to 
 
-{% include image.html name='Example_SOP.svg' class='imgleft' width=50 height=50 %}
+{% include image.html name='Example_SOP.svg' class='imgleft' size=50 %}
+
+Aute irure exercitation ut officia culpa nostrud. Dolor Lorem ad duis adipisicing enim fugiat nulla. Ad ea consectetur veniam anim labore pariatur irure esse laborum minim ad ad. Quis dolore adipisicing labore do dolore ex et do nostrud dolore irure elit elit.
+
+Pariatur magna aliquip incididunt consequat qui duis dolor ea ut aliquip ex do. Consectetur ullamco velit veniam cupidatat in veniam laborum consectetur ad irure minim. Qui mollit laboris labore sit sit.
+
+Fugiat magna et non aliqua reprehenderit veniam. Ipsum nostrud pariatur occaecat sit magna commodo quis. Esse nostrud consequat officia occaecat excepteur id incididunt do commodo ipsum elit. Dolor non aliquip exercitation irure do quis elit.
+
+Ex excepteur sunt ipsum pariatur incididunt reprehenderit laboris. Laboris sit anim consequat consequat aliqua nostrud est. Eiusmod labore sit id non sunt cupidatat dolor reprehenderit in. Do deserunt ut exercitation anim nostrud anim nisi enim cillum cupidatat. Mollit nostrud ipsum aliqua laboris esse nisi laboris occaecat non consectetur qui.
+
 
 
 * Assembly / Manufacturing Job Instructions (JI)
@@ -58,7 +67,7 @@ Making Assembly Instructions and SOP Instructions (Standard Operating Procedure)
 
 There are a lot of videos on Youtube and articles about making good job instruction such as [here]{https://4industry.com/manufacturing-glossary/digital-work-instructions-a-complete-guide/}
 
-{% include image.html name='After_Prep_Drawing.png' class='imgleft' width=50p  height=50p %}
+{% include image.html name='After_Prep_Drawing.png' class='imgleft' size=100 %}
 
 Veniam elit sunt adipisicing non excepteur deserunt eiusmod. Do aliquip sint elit velit fugiat consequat consectetur labore esse. Voluptate ullamco velit ullamco deserunt deserunt. Esse cillum amet veniam qui culpa. Lorem pariatur consectetur labore adipisicing ex ea ad tempor. Nostrud sint voluptate laborum ut ex.
 

@@ -273,18 +273,15 @@ a {
 
 }
 
-$imgsz: 40%;
 $imgmargin: 20px;
   
 .imgleft {
-	display: inline-flex;
 	float: left;
 	margin-right: $imgmargin;
 	margin-bottom: $imgmargin;
 }
 
 .imgright {
-	display: inline-flex;
 	float: right;
 	margin-left: $imgmargin;
 	margin-bottom: $imgmargin;
@@ -293,3 +290,8 @@ $imgmargin: 20px;
 .caption {
 	text-align: center;
 }
+
+img {
+	max-width: 100%;
+	height: auto;
+  }

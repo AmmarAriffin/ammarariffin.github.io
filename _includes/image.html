@@ -1,16 +1,9 @@
 <div class="image-class">
-     <figure {% if include.class %}class="{{ include.class | default: 'imgright' }}"{% endif %}>
+     <figure {% if include.class %}class="{{ include.class | default: 'imgright' }}"{% endif %}
+     {% if include.size %}style="max-width: {{ include.size | append: '%' }}"{% endif %} >
           <img src="{{ site.baseurl }}/assets/images/{{ include.name }}"
-          alt="{{ include.alt | default: ''}}"
-          {% if include.width %} 
-               {% if include.width contains "p" %}
-                    width="{{ include.width | replace: 'p', '%'}}"
-               {% else %}
-                    width="{{ include.width }}"
-               {% endif %}
-          {% endif %}
-          {% if include.height %}height="{{ include.height }}"{% endif %} />
-          <!-- <figcaption class="caption"> test caption </figcaption> -->
+          alt="{{ include.alt | default: ''}}">
+          <figcaption class="caption"> test caption </figcaption> 
      </figure>
 </div>
 
