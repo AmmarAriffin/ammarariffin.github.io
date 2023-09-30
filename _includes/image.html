@@ -1,8 +1,17 @@
-<div class="image-box">
-     <img src="{{ site.baseurl }}/assets/images/{{ include.name }}"
-     alt="{{ include.alt | default: ''}}"
-     {% if include.class %}class="{{ include.class | default: 'one-image' }}"{% endif %}
-     {% if include.width %}width="{{ include.width }}"{% endif %}
-     {% if include.height %}height="{{ include.height }}"{% endif %} />
+<div class="image-class">
+     <figure {% if include.class %}class="{{ include.class | default: 'imgright' }}"{% endif %}>
+          <img src="{{ site.baseurl }}/assets/images/{{ include.name }}"
+          alt="{{ include.alt | default: ''}}"
+          {% if include.width %} 
+               {% if include.width contains "p" %}
+                    width="{{ include.width | replace: 'p', '%'}}"
+               {% else %}
+                    width="{{ include.width }}"
+               {% endif %}
+          {% endif %}
+          {% if include.height %}height="{{ include.height }}"{% endif %} />
+          <!-- <figcaption class="caption"> test caption </figcaption> -->
+     </figure>
 </div>
+
 

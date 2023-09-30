@@ -17,6 +17,12 @@ footer {
     background-size: cover;
 }
 
+/* Prevent image from floating beside headers*/
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+  
 
 /* Change Linky Behaviour */
 .masthead {
@@ -215,6 +221,12 @@ a {
 		}
 	}
 }
+
+.markdown-content {
+	a {
+		color:blue;
+	}
+}
 .social-icons {
 	display: block;
 	margin-block-start: 1em;
@@ -253,16 +265,31 @@ a {
 }
 
 
-.image-box {
+
+.two-image {
+	max-width: 100%;
 	display:flex;
 	justify-content: center;
 
 }
 
-.two-image {
-	max-width: 100%;
+$imgsz: 40%;
+$imgmargin: 20px;
+  
+.imgleft {
+	display: inline-flex;
+	float: left;
+	margin-right: $imgmargin;
+	margin-bottom: $imgmargin;
 }
 
-.one-image {
-	width:40%;
+.imgright {
+	display: inline-flex;
+	float: right;
+	margin-left: $imgmargin;
+	margin-bottom: $imgmargin;
+}
+
+.caption {
+	text-align: center;
 }

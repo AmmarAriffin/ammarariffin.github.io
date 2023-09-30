@@ -1,14 +1,15 @@
 ---
 title: Making Job Instructions for Assembling
-date: 2023-08-19
-reference: Job_Instructions
+date: 2023-08-19    
 ---
 
-I noticed that making ***Job Instructions (JI)*** for assembling sometimes require some nuances that I felt like needed to be shown
+When I was making ***Job Instructions (JI)*** for assembling, it feels like sometimes there are pieces of things that I felt needed to be inputted into it.
+
+But first ...
 
 Why make job instructions?
 
-This is much because of ISO 9001 that is pretty prestigious in that it requires a company that has paid for ISO 9001 certification to be more professional and easier to get customers to do business with them. Part of the requirement in being part of the ISO 9001 is having to have job instructions for every assembly in {%cite ISO_2023 REWO %}
+This is much because of ISO 9001 that is pretty prestigious in that it requires a company that has paid for ISO 9001 certification to be more professional and easier to get customers to do business with them. Part of the requirement in being part of the ISO 9001 is having to have job instructions for every assembly in [here](https://www.iso.org/iso-9001-quality-management.html)
 
 For a company that focuses on mostly human-based assembling a product for a customer, labour time takes up a significant cost.
 
@@ -16,23 +17,58 @@ How to make good job instructions?
 
 ## Why Make Good Job Instructions In The First Place
 ### 1. Save Labour Time
-For a company that has a factory that requires human-assembled product, or worse yet, a company that specialises in assembling and manufacturing various customer products. **Labour time would takes up a significant cost for these type of companies**. A JI can take a massive difference since assemblers would know procedures much faster.
+For a company that has a factory that requires human-assembled product, or a company that specialises in assembling and manufacturing various customer products. **Labour time would takes up a significant cost for these type of companies**. A JI can take a massive difference since assemblers would know procedures much faster.
 
-To get the fastest labour time is obviously assembling procedures that are already embedded into the assemblers mind. Having JI just makes it easier for the assemblers to be in this state. 
+The fastest labour time is ones that they remember from start to finish. No need to look up at JIs or face any difficulty in the process since they already know what to do (like robots). However, I think its too idealistic to have people remember from start to finish. 
+
+Having a good JI atleast can guide people to the correct assembly. The problem is when the JI's are itself problematic and can either confuse with hard to interpret sentences and have them asking more questions.
 
 ### 2. Avoid Mistakes
 
 Small mistakes made during assembling such as forgotting to put a certain screw on a bracket before installing another bracket that completely prevents the other forgotten bracket to be installed can consume a lot of the labour time especially after you have gone deep into the procedure and have to dissasemble back to just install the bracket you forgot earlier. **These mistakes could really be big time waster especially if your making big batches of units at once and forgot to install it for all of the units**.
 
-### 3. Beginner Friendly 
+### 3. Easier To Train New People
 
-Often too, some people come and go in this assembling industry to pursue better opportunities and salaries. Making  job instructions would not only reduce training time and consequently more labour time needed initially for engineers of that products to teach but also getting 
 
-## GOOD JOB INSTRUCTION CHARACTERISTICS
+
+## Some Terms to Knowledge
+
+* SOP (Standard Operating Procedures)
+  * Broad
+  * Include multiple departments. 
+    * For example, Sales and Engineering or Electrical Assembly and Mechanical Assembly
+  * Provide general steps for a company to reach a certain example (such as quoting to engineering to assembling to packaging)
+    * For example, Quoting to 
+
+{% include image.html name='Example_SOP.svg' class='imgleft' width=50 height=50 %}
+
+
+* Assembly / Manufacturing Job Instructions (JI)
+  * Specific
+  * For the assemblers themself. For 
+
+
+
+## Difference Between Assembly / Manufacturing Job Instructions and SOP Instructions.
+
+I got a chance to make both SOPs (Standard Operating Procedures) and Assembly Instructions. When makin
+Making Assembly Instructions and SOP Instructions (Standard Operating Procedure) can be two different thigns
+
+## How I Approached Making Good Job Instruction Procedures
+
+There are a lot of videos on Youtube and articles about making good job instruction such as [here]{https://4industry.com/manufacturing-glossary/digital-work-instructions-a-complete-guide/}
+
+{% include image.html name='After_Prep_Drawing.png' class='imgleft' width=50p  height=50p %}
+
+Veniam elit sunt adipisicing non excepteur deserunt eiusmod. Do aliquip sint elit velit fugiat consequat consectetur labore esse. Voluptate ullamco velit ullamco deserunt deserunt. Esse cillum amet veniam qui culpa. Lorem pariatur consectetur labore adipisicing ex ea ad tempor. Nostrud sint voluptate laborum ut ex.
+
+Aliqua officia aliquip officia voluptate duis aute. Aliqua ut do elit in consectetur do proident amet officia do sunt labore sint reprehenderit. Do dolor occaecat proident exercitation anim elit ullamco id ipsum amet sint. Aliquip in ipsum tempor irure aliquip. Lorem eiusmod mollit mollit amet sint cupidatat aliqua voluptate aute ullamco duis commodo. Duis cupidatat tempor culpa reprehenderit reprehenderit veniam.
+
+Quis officia adipisicing enim irure dolore ad tempor in dolor deserunt eiusmod Lorem labore commodo. Dolore dolore pariatur aliqua occaecat. Est culpa sit aliqua velit nisi ea dolore incididunt qui eiusmod mollit aute minim commodo. Quis deserunt nostrud labore anim voluptate sint aliquip incididunt ipsum ipsum.
 
 ### 1. More Pictures, Less Words
-I do often do a lot of assembling, and I never read the lengthy text in a job instruction. Why bother writing it up then if nobodies gonna read it. More than not, people would actually waste precious labour time 
 
+Sometimes, I do some assembling, and the things I noticed is that **nobody**, even me reads words. The question is why bother  
 
 ### 2. Descriptive Pictures
 
@@ -90,15 +126,41 @@ POV of assembling is also an important matter because you dont want people to fl
 
 clearly if your working on a bench similar to this, would you have had the photo from the front (left) or back (right). It might not be a problem, but this small view perspective could confuse new assemblers looking at this for the first time
 
-
 Sometimes it might be better to just have yellow background, but this might accumulate small cost overtime due to yellow background
 
-![Clearer Text](..\_assets\images\Yellow_rather_than_red.png)
+{% include image.html name="Yellow_rather_than_red.png" class="one-image" %}
 
 The instructions should always follow how the assemblers are supposed to be doing, such as prepping and then combine all this blocks of prepped blocks into a final assembly such as shown.
 
-![Prepping](..\_assets\images\Separate_Prep_AND_FINAL.png)
+{% include image.html name="Separate_Prep_AND_FINAL.png" class="one-image" %}
 
 and then reveal to them the final assembly which would make it easier to understand
 
-![Final_Assembly](..\_assets\images\After_Prep_Drawing.png)
+{% include image.html name="After_Prep_Drawing.png" class="one-image" %}
+
+
+## Researching
+
+### 1. [Work Instructions or SOPs - Why They Help](https://www.youtube.com/watch?v=x_lO74fO3VA)
+
+Knowledge everybody fall into a job instruction. Easier to perform specific task to avoid errors. Verbal mentioned are often forgotten because mistakes inputted in JI eliminate human error. 
+
+Be in consistant format, keep it very short and think about your audience. If people not used to reading make it more visual. 
+
+Need very clear template to have it same format. Job instruction should be made by person who is making the assembly. 
+
+Advantage lower risk of errors and efficiency, write in active voice
+
+Work instruction are not procedures or processes. Processes are more general, more like process flow 
+
+SOPS Standard Operating Procedure to 
+
+
+### 2. Writing Instructions and Procedures
+
+Do not assume readers have performed the process before. Perform a trial run yourself to make your own Job Instructions
+
+Write in active voice, 
+
+
+
