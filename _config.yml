@@ -74,6 +74,13 @@ defaults:
       path: "_posts/Chinese"
     values:
       category: "Chinese"
+      layout : "post_default"
+
+  - scope:
+      path: "_posts/Other"
+    values:
+      category: "Other"
+      layout : "post_default"
 
 sass:
   sass_dir: _sass

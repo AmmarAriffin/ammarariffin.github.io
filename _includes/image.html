@@ -3,7 +3,7 @@
      {% if include.size %}style="max-width: {{ include.size | append: '%' }}"{% endif %} >
           <img src="{{ site.baseurl }}/assets/images/{{ include.name }}"
           alt="{{ include.alt | default: ''}}">
-          <figcaption class="caption"> test caption </figcaption> 
+          <figcaption id="{{ include.id }}" class="caption"> {{ include.cap }} </figcaption> 
      </figure>
 </div>
 

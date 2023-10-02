@@ -18,7 +18,7 @@ footer {
 }
 
 /* Prevent image from floating beside headers*/
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6{
 	clear: both;
 }
 
@@ -289,9 +289,19 @@ $imgmargin: 20px;
 
 .caption {
 	text-align: center;
+	scroll-margin-top: 600px;
 }
 
 img {
 	max-width: 100%;
 	height: auto;
   }
+
+.clear-right {
+	clear: right;
+  }
+
+.clear-left {
+	clear: left;
+}
+  
