@@ -1,0 +1,32 @@
+baseURL = "/"
+languageCode = 'en-us'
+title = 'My test'
+theme = "heyo-hugo-theme"
+paginate = 10
+
+[params.author]
+    name = "Ammar Ariffin"
+    email = "ammar.ariffin.x@gmail.com"
+
+[params]
+    title = " the Title"
+    showTOC = true
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:ammar.ariffin.x@gmail.com"
+
+
+[menus]
+
+[[menus.main]]
+    name = "About"
+    identifier = "about"
+    weight = 100
+    url = "/about/"
+[[menus.main]]
+    name = "Posts"
+    weight = 200
+    identifer = "posts"
+    url = "/posts/"
