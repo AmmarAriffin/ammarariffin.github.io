@@ -17,7 +17,6 @@ icon = "fas fa-envelope"
 title = "e-mail"
 url = "mailto:ammar.ariffin.x@gmail.com"
 
-
 [menus]
 
 [[menus.main]]
