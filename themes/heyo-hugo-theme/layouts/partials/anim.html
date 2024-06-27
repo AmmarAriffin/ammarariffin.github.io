@@ -1,0 +1,33 @@
+<div class="middle-sidebar grow" id="middle-sidebar">
+    {{ if .Params.showToc }}
+        <div class="title-toc" id="title-toc">
+            <h6>{{ i18n "table_of_contents"}}</h6>
+        </div>
+        {{/* Insert TOC from hugo
+            If the document was rendered by blogdown .TableOfContents is empty
+            TOC from blogdown is managed at sidebar-toc.js
+        */}}
+        {{ .TableOfContents }}
+    {{ else }}
+        {{ $sketch := "" }}
+        {{ if (isset .Params "sketch") }}
+            {{ $sketch = .Params.sketch }}
+        {{ else if (isset site.Params "sketch") }}
+            {{ $sketch = site.Params.sketch }}
+        {{ else }}
+            {{ $sketch = dict "enable" "True"}}
+        {{ end }}
+
+        {{ if $sketch.enable }}
+            {{ $use := cond (isset $sketch "use") $sketch.use "meta" }}
+            {{ $starting := cond (isset $sketch "startingconfig") $sketch.startingconfig "" }}
+            {{ $displayOptions := cond (isset $sketch "displayoptions") $sketch.displayOptions true }}
+            
+            <div
+                id="sidebar-sketch"
+                data-sketch="{{ $use }}"
+                data-sketch-starting="{{ $starting }}"
+                data-sketch-show-hover="{{ $displayOptions }}"></div>
+        {{ end }}
+    {{ end }}
+</div>

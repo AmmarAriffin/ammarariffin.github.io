@@ -216,6 +216,8 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    z-index: 1;
 }
 
 /* Post Header */
@@ -370,11 +372,17 @@ hr {
 }
 
 .middle-sidebar {
-    flex-grow: 1;
+    /* flex-grow: 1;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
+    position: fixed !important;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:0;
 }
 
 .middle-sidebar:hover {

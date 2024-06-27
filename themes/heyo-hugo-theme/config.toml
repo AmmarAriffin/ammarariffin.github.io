@@ -2,3 +2,15 @@
   [module.hugoVersion]
     extended = true
     min = "0.59.1"
+
+[params.sketch] 
+  enable = true 
+  displayOptions = true
+  # Graph, Digital Rain, or Circles
+  use = "Digital Rain"
+  # JSON that is passed to the sketch constructor
+  # You can check all the possible configurations in
+  startingConfig = """{
+    "kind": "katakana",
+    "nStreams": 10
+  }"""

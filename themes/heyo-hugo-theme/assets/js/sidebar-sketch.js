@@ -7,6 +7,7 @@ function setup() {
 
     updateTheme();
 
+    // Where we will get parameter from the page itself
     let sketchName = getCookie('sketch-name') || container.getAttribute('data-sketch') || 'Graph';
     let showHoverOptions = container.getAttribute('data-sketch-show-hover') === 'true';
     let sketchOptions = JSON.parse(container.getAttribute('data-sketch-starting') || "{}");
@@ -41,23 +42,6 @@ function updateTheme() {
     if (sketch) {
         sketch.updateTheme();
     }
-}
-
-function windowResized() {
-    if (windowWidth <= 950) {
-        noLoop();
-        return;
-    } else {
-        loop();
-    }
-
-    let container = document.getElementById('sidebar-sketch');
-    let { width, height } = container.getBoundingClientRect();
-
-    h = height
-    w = width
-
-    resizeCanvas(width, height);
 }
 
 document.addEventListener('DOMContentLoaded', () => {

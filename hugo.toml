@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = 'en-us'
-title = 'My test'
+title = 'Ammar Ariffin'
 theme = "heyo-hugo-theme"
 paginate = 10
 
@@ -9,8 +9,8 @@ paginate = 10
     email = "ammar.ariffin.x@gmail.com"
 
 [params]
-    title = " the Title"
-    showTOC = true
+    title = "Ammar Ariffin"
+    profilePicture = "images/Profile.jpg"
 
 [[params.socialIcons]]
 icon = "fas fa-envelope"

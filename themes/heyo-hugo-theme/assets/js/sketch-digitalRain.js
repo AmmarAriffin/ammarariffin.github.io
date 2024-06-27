@@ -5,17 +5,17 @@ String.prototype.replaceAt = function (index, replacement) {
 
 class Symbols {
     constructor(start, end, nope) {
-        this.start = start
+        this.start = start // The start of the character code (unicode? I think)
         this.end = end
         this.nope = nope
 
-        this.span = this.end - this.start + 1
+        this.span = this.end - this.start + 1 // Just getting the length of all characters
     }
 
     getRandom() {
-        let candidate = Math.floor(Math.random() * this.span + this.start)
+        let candidate = Math.floor(Math.random() * this.span + this.start) // getting random letter within the character code
 
-        if (this.nope.includes(candidate) || candidate == this.lastGenerated)
+        if (this.nope.includes(candidate) || candidate == this.lastGenerated) // prevent getting the same letter twice or leatters you include in this.nope
             return this.getRandom()
 
         this.lastGenerated = candidate
@@ -36,6 +36,7 @@ class Rain {
         this.setup();
     }
 
+    // picking which letters do you want, from multiple symbols list
     setSymbolGenerator() {
         if (!this.style) {
             this.symbolGenerator = SYMBOLS.katakana
@@ -56,6 +57,7 @@ class Rain {
         this.symbols = this.getSymbols();
     }
 
+    
     getSymbols() {
         let randomNumbers = Array.from(
             { length: this.nSymbols },
@@ -82,9 +84,9 @@ class Rain {
         // this.speed = .1 + .2 * Math.random()
         this.speed = map(this.symbolSize, 6, 25, 0.1, 0.5);
 
-        this.yCutoff = h;
-        // this.yCutoff = h - h / 3 * Math.random()
-
+        this.yCutoff = h; // this.yCutoff = h - h / 3 * Math.random()
+        
+        // 
         this.glitchInterval = setInterval(this.glitch.bind(this), 100 + 100 * Math.random());
         this.glitchy = Math.random() > .9;
         
@@ -92,9 +94,9 @@ class Rain {
     }
 
     update() {
-        this.y += this.speed * deltaTime;
+        this.y += this.speed * deltaTime; // get next position with speed*time
 
-        if(this.y > this.yCutoff) {
+        if(this.y > this.yCutoff) { // When the symbol passed the cutoff at the bottom
             if(this.renderStart < this.nSymbols) {
                 this.y -= this.symbolSize;
                 this.renderStart += 1;
@@ -113,7 +115,7 @@ class Rain {
         )
         
         //always glitch 0
-        this.symbols = this.symbols.replaceAt(0, this.symbolGenerator.getRandomSymbol())
+        this.symbols = this.symbols.replaceAt(0, this.symbolGenerator.getRandomSymbol()) 
 
         for(let idx of toGlitch) {
             this.symbols = this.symbols.replaceAt(idx, this.symbolGenerator.getRandomSymbol())
@@ -176,9 +178,10 @@ class Rain {
 }
 
 class DigitalRain {
-    constructor({kind, nStreams} = {}) {
+    constructor({kind, nStreams, color} = {}) {
         this.kind = kind || 'katakana';
         this.nStreams = nStreams || 2;
+        this.Color = color || "black";
      }
 
     setup() {
@@ -194,7 +197,7 @@ class DigitalRain {
             if(++i == this.nStreams) window.clearInterval(intervalId);
         }, 200);
         
-        noStroke();
+        noStroke(); 
     }
 
     draw() {
@@ -211,64 +214,6 @@ class DigitalRain {
     mouseClicked(e) { }
 
     mouseWheel(e) { }
-
-    getSettings() {
-        // Choose style
-        let styleSelect = createSelect();
-                
-        Object.keys(SYMBOLS).map(k => styleSelect.option(k));
-        styleSelect.option('random');
-        styleSelect.selected(this.kind);
-
-        styleSelect.changed(() => {
-            this.style = styleSelect.value();
-
-            this.rs.forEach((r) => r.updateStyle(this.style));
-        });
-
-        // # Streams
-        let nStreams = createDiv();
-        let removeButton = createButton(`<i class='fa fa-minus'></i>`);
-        let addButton = createButton(`<i class='fa fa-plus'></i>`);
-
-        removeButton.mousePressed(() => {
-            if(this.rs.length > 0) this.rs.pop();
-        });
-
-        addButton.mousePressed(() => {
-            if(this.rs.length < 100) this.rs.push(new Rain(this.style));
-        });
-
-        removeButton.parent(nStreams);
-        addButton.parent(nStreams);
-
-        // Color
-        let colorPicker = createColorPicker(theme.a);
-        colorPicker.input(() => {
-            drawingContext.shadowColor = colorPicker.value();
-            
-            this.rs.forEach((r) => r.color = color(colorPicker.value()));
-        });
-
-        // Shadow things
-        let shadowBlur = createSlider(0, 5, 0, .1);
-        shadowBlur.input(() => {
-            drawingContext.shadowBlur = shadowBlur.value();
-        });
-
-        let shadowOffsetSlider = createSlider(-10, 10, 0, 0.1);
-        shadowOffsetSlider.input(() => {
-            drawingContext.shadowOffsetY = shadowOffsetSlider.value();
-        });
-
-        return {
-            'Style': styleSelect,
-            '# Streams': nStreams,
-            'Color': colorPicker,
-            'Shadow Blur': shadowBlur,
-            'Shadow Offset Y': shadowOffsetSlider
-        }
-    }
 }
 
 const SYMBOLS = {
